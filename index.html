@@ -6,8 +6,6 @@
     <title>js-biglietto-treno-form</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="js/script.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -15,66 +13,61 @@
         <div class="titolo">
           <h2>CALCOLA IL PREZZO DEL BIGLIETTO</h2>
         </div>
-
         <div class="inserimenti">
           <div class="nome-cognome">
-            <p>asdasd</p>
-            <input type="text" name="" value="">
+            <p>Nome</p>
+            <input id="nome-field" type="text">
           </div>
           <div class="chilometri">
-            <p>asdasd</p>
-            <input type="text" name="" value="">
+            <p>Chilometri da percorrere</p>
+            <input id="chilometri-field" type="number" name="" value="">
           </div>
           <div class="classe">
-            <p>asdasd</p>
-            <select class="" name="">
-              <option value="0">Maggiorenni</option>
-              <option value="1">Minorenni</option>
-              <option value="2">Over</option>
+            <p>Fascia d'età</p>
+            <select id="eta"class="" name="">
+              <option value="0">Maggiorenne</option>
+              <option value="1">Minorenne</option>
+              <option value="2">Over 65</option>
             </select>
           </div>
         </div>
         <div class="procedi">
           <div class="genera">
-            <button type="button" name="button">GENERA</button>
+            <button type="button" id="genera-button">GENERA</button>
           </div>
           <div class="annulla">
-            <button type="button" name="button">ANNULLA</button>
+            <button id="annulla-button" type="button" name="button">ANNULLA</button>
           </div>
         </div>
-
         <div class="titolo">
           <h2>IL TUO BIGLIETTO</h2>
         </div>
-
-        <div class="ticket">
-          <h3>DETTAGLIO PASSEGGERI</h3>
-          <div class="grigio">
-            <h3>NOME PASSEGGERO</h3>
-            <h3>BLABL</h3>
-          </div>
-          <div class="tabella">
-            <table>
-              <tr>
-                <td>Offerta</td>
-                <td>Carrozza</td>
-                <td>Codice CP</td>
-                <td>Costo biglietto</td>
-              </tr>
-              <tr>
-                <td>Sconto Minorenne</td>
-                <td>7</td>
-                <td>99999</td>
-                <td>3,50 €</td>
-              </tr>
-            </table>
-
-          </div>
-
+        <div id="scompare"class="ticket">
+          <h3 id="secondo-titolo">DETTAGLIO PASSEGGERI</h3>
+          <div class="container-extra">
+            <div class="grigio">
+              <h3>NOME PASSEGGERO:</h3>
+              <h3 id="nome-pass">Nome</h3>
+            </div>
+            <div class="tabella">
+              <table>
+                <tr class="t">
+                  <td>Offerta</td>
+                  <td>Carrozza</td>
+                  <td>Codice CP</td>
+                  <td>Costo biglietto</td>
+                </tr>
+                <tr class="z">
+                  <td id="offerta"></td>
+                  <td id="numero-carrozza"></td>
+                  <td id="numero-codice"></td>
+                  <td id="totale"></td>
+                </tr>
+              </table>
+            </div>
         </div>
-
       </div>
     </div>
-
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
